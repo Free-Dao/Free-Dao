@@ -1,6 +1,7 @@
 # Free Dao
 
-FreeDAO is a easy to implement POAP Member Gating for DAO's
+FreeDAO is a easy to implement POAP Member Gating for DAO's.
+
 DAO's across the globe can easily use the FreeDAO template to Gate their communities with POAP's stored on IPFS and allow features to their members
 
 ### The repository contains 3 Major Packages
