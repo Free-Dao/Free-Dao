@@ -39,7 +39,6 @@ We are experimenting this with our WomenInWeb3DAO in our college
 - [ ] flow visulisation
 - [ ] add placeholder and CTA to conenct wallet when it isn't
 - [ ] Add option to start Flow using Superfluid
-- [ ] add placeholder and CTA to conenct wallet when it isn't
 - [ ] Setup fee to mint
 - [ ] TBD
 - [ ] Merge with base
