@@ -10,6 +10,8 @@ DAO's across the globe can easily use the FreeDAO template to Gate their communi
 2. Database Package (SQL => TableLands IPFS)
 3. Front-End Package (NextJS)
 
+We are experimenting this with our WomenInWeb3DAO in our college
+
 ---
 
 #### Contracts
@@ -25,7 +27,7 @@ DAO's across the globe can easily use the FreeDAO template to Gate their communi
 
 # Things TODO
 
-- [ ] Complete migration to Tablelands (IPFS)
+- [x] Complete migration to Tablelands (IPFS)
 - [ ] Add network Selector
 - [ ] Display current network
 - [ ] DevOps
@@ -37,12 +39,16 @@ DAO's across the globe can easily use the FreeDAO template to Gate their communi
 - [ ] flow visulisation
 - [ ] add placeholder and CTA to conenct wallet when it isn't
 - [ ] Add option to start Flow using Superfluid
-- [ ] add placeholder and CTA to conenct wallet when it isn't
 - [ ] Setup fee to mint
-- [ ] TBD
 - [ ] Merge with base
 
 Verification of contracts :
 
 npx hardhat verify --network polygon 0xbad66D5bdF1bcC0c707813309b06a53C3C9C2f5d "0xE84132Be566a83988501a1eA134DeC5992ea0aaE" "FREEDAO" "FREEDAO" "100" "https://bafybeidn3d7bl3onkyasfhdghalqmdm64mng47g4qwnp25gzt7pdcesvb4.ipfs.dweb.link/metadata.json"
 npx hardhat verify --network polygon 0x473837550ceDf7f16805C15C21487d3A44f26cE5
+
+#### Contact the Developers
+ramiza.shaikh.95@gmail.com - Ramiza Shaikh
+msaraali1992@gmail.com - Sara Ali
+
+
