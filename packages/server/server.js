@@ -88,10 +88,8 @@ app.get(`${BASE_URL_V1}/allPocs`, async (req, res) => {
 
 app.post(`${BASE_URL_V1}/getAllPocsCreatedByUser`, jsonParser, async (req, res) => {
 	// read the request data
-	console.log(req.body);
 	const { userAddr } = req.body;
 	const query = await pool.query('SELECT poc_address FROM pocs WHERE creator_address = ?', [userAddr]);
-	console.log(query[0], query[1]);
 	res.send(query[0])
 });
 
@@ -103,8 +101,6 @@ app.post(`${BASE_URL_V1}/mint`, jsonParser, async (req, res) => {
 	console.log("freedao address and recipient", pocAddress, recipient)
 	// select the freedao address in the freedao table
 	const pocs = await pool.query('SELECT * FROM pocs WHERE poc_address = ?', [pocAddress]);
-	console.log("found pocs", pocs.length);
-	console.log("found pocs", pocs[0][0]);
 	const chainID = parseInt(pocs[0][0].chain_id, 10)
 	console.log("chainID?", chainID, pocs[0].chain_id)
 	const providerURL = chainIDToProvider(chainID)
@@ -125,12 +121,9 @@ app.listen(3000, async () => {
 
 	pool = await serverdbPoolPromise();
 
-	console.log(`Your port is ${process.env.SERVER_PORT}`);
 	const providerURL = chainIDToProvider(10)
-	console.log(`Your provider is ${providerURL}`);
 	const provider = new ethers.providers.JsonRpcProvider(providerURL)
 	const signer = new ethers.Wallet(process.env.SK, provider);
-	console.log(`The signer address is ${signer.address}`);
 	// cors allow all
 	const corsOptions = {
 		origin: process.env.FRONTEND_URL,
