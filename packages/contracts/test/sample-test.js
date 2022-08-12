@@ -6,6 +6,7 @@ describe("Greeter", function () {
     const PocFactory = await ethers.getContractFactory("PocFactory");
     const Freedao = await ethers.getContractFactory("Freedao");
     const pocfactory = await PocFactory.deploy();
+    console.log(pocfactory);
     console.log("pocfactory", pocfactory.address);
     const signers = await ethers.getSigners();
     const admin = signers[0];
